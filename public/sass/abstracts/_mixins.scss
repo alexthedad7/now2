@@ -1,0 +1,32 @@
+   @mixin respond($breakpoint) {
+    @if $breakpoint == grid-sm {
+        @media (min-width: 36em) { @content};           //576px
+    }
+    @if $breakpoint == grid-md {
+       @media (min-width: 48em) { @content};            //768px
+   }
+   @if $breakpoint == grid-lg {
+       @media (min-width: 62em) { @content};            //992px
+   }
+   @if $breakpoint == grid-xl {
+       @media (min-width: 75em) { @content};            //1200px
+   }
+   }
+
+   @mixin respondm($mbreakpoint) {
+    @if $mbreakpoint == mgrid-sm {
+        @media (max-width: 36em) { @content};           //576px
+    }
+    @if $mbreakpoint == mgrid-md {
+       @media (max-width: 48em) { @content};            //768px
+   }
+   @if $mbreakpoint == mgrid-lg {
+       @media (max-width: 62em) { @content};            //992px
+   }
+   @if $mbreakpoint == mgrid-xl {
+       @media (max-width: 75em) { @content};            //1200px
+   }
+   @if $mbreakpoint == mgrid-bxl {
+    @media (max-width: 93.75em) { @content};            //1500px
+   }
+   }
